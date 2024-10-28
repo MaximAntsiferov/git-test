@@ -6,7 +6,6 @@ ser.write(b"\x4A")
 data = ser.read(5)
 print(data)
 weight = int.from_bytes(data[2:4], byteorder="little", signed=True) / 100
-print(weight)
 
 
 import win32file
